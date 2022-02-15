@@ -1,24 +1,18 @@
-# README
+# MVP Requirements
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- [ ] Import highlights
+- [ ] Store highlights in a database
+- [ ] View highlights
+- [ ] Sort/view highlights by book
+- [ ] Sort/view highlights by author
+- [ ] Sort/view highlights by tag
+- [ ] Highlights should have creation date
+- [ ] Highlights should be taggable
+- [ ] Implement a login system for users
+- [ ] Export highlights via markdown/csv
 
-Things you may want to cover:
+# App Details
 
-* Ruby version
+* Ruby version 3.0.3
+* Rails version 7.0.2.2
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
