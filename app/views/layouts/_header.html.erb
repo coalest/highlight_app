@@ -1,7 +1,13 @@
-<header>
-  <nav>
-    <ul>
-      <li><%= link_to "Home",   root_path %></li>
-    </ul>
-  </nav>
+<header class="mb-auto">
+  <div>
+    <h3 class="float-md-start mb-0">
+      <%= link_to "Hightlight App", root_path, style: "text-decoration:none; color:white" %>
+    </h3>
+    <nav class="nav nav-masthead justify-content-center float-md-end">
+      <%= link_to "Home", root_path, class: "nav-link" %>
+      <%= link_to "Features", features_path, class: "nav-link" %>
+      <%= link_to "About", about_path, class: "nav-link" %>
+      <%= link_to "Log In", "#", class: "nav-link" %>
+    </nav>
+  </div>
 </header>
