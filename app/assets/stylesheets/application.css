@@ -14,14 +14,9 @@
  *= require_self
  */
 
-a.deco-none {
-  color: inherit;
-  text-decoration: inherit;
-}
-a.deco-none:link {
-  color: inherit;
-  text-decoration: inherit;
-}
+/*
+ * CSS for Bootstrap template called Cover
+ */
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -37,11 +32,6 @@ a.deco-none:link {
   }
 }
 
-/*
- * Globals
- */
-
-
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -49,7 +39,6 @@ a.deco-none:link {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
-
 
 /*
  * Base structure
