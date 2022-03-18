@@ -10,7 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_16_140348) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_16_140845) do
+  create_table "highlights", force: :cascade do |t|
+    t.text "text"
+    t.integer "location"
+    t.string "location_type"
+    t.integer "source_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["source_id"], name: "index_highlights_on_source_id"
+    t.index ["user_id"], name: "index_highlights_on_user_id"
+  end
+
+  create_table "sources", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.string "category"
+    t.string "origin"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -23,4 +44,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_16_140348) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "highlights", "sources"
+  add_foreign_key "highlights", "users"
 end
