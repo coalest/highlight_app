@@ -5,6 +5,7 @@ class AddBasicModel < ActiveRecord::Migration[7.0]
       t.string   :author
       t.string   :category
       t.string   :origin
+      t.string   :external_id
 
       t.timestamps null: false
     end

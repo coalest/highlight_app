@@ -28,6 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_16_140845) do
     t.string "author"
     t.string "category"
     t.string "origin"
+    t.string "external_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
