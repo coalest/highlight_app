@@ -14,6 +14,7 @@ class AddBasicModel < ActiveRecord::Migration[7.0]
       t.text       :text
       t.integer    :location
       t.string     :location_type
+      t.string     :external_id
       t.references :source, foreign_key: true
       t.references :user, foreign_key: true
 

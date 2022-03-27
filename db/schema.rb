@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_16_140845) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_27_115838) do
   create_table "highlights", force: :cascade do |t|
     t.text "text"
     t.integer "location"
     t.string "location_type"
     t.integer "source_id"
     t.integer "user_id"
+    t.string "external_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["source_id"], name: "index_highlights_on_source_id"
